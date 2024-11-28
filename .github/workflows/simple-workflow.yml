@@ -16,6 +16,9 @@ jobs:
       # Étape 1 : Afficher un message indiquant la récupération du code source
       - name: Récupération du code source
         run: echo "Récupération du code source"
+      # Recuperation du code source chechout
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
 
       # Étape 2 : Afficher un message indiquant que la vérification est terminée
       - name: Vérification terminée
