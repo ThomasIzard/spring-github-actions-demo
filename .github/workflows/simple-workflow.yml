@@ -1,0 +1,22 @@
+name: Simple Workflow
+
+on:
+  # Déclenchement manuel
+  workflow_dispatch:
+
+  # Déclenchement programmé toutes les heures
+  schedule:
+    - cron: '0 * * * *' # Toutes les heures
+
+jobs:
+  main_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Étape 1 : Afficher un message indiquant la récupération du code source
+      - name: Récupération du code source
+        run: echo "Récupération du code source"
+
+      # Étape 2 : Afficher un message indiquant que la vérification est terminée
+      - name: Vérification terminée
+        run: echo "Vérification terminée"
