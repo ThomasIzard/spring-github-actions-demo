@@ -5,8 +5,8 @@ on:
   workflow_dispatch:
 
   # Déclenchement programmé toutes les heures
-  schedule:
-    - cron: '0 * * * *' # Toutes les heures
+  # schedule:
+  #  - cron: '0 * * * *' # Toutes les heures
 
 jobs:
   main_job:
